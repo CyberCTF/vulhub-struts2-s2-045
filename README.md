@@ -13,7 +13,7 @@ the machine runs Vulhub's published image `vulhub/struts2:2.3.30`; the environme
 
 ```bash
 isoloom generate
-isoloom up docker
+isoloom run docker
 ```
 
 Then open http://localhost:8080/ to see the upload page. The same spec runs as Docker on a local VM (`docker-vm`), on a

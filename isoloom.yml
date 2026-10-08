@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://www.isoloom.com/schema/v1.json
 # Struts2 S2-045 (CVE-2017-5638) (Vulhub, by phith0n and the Vulhub contributors) as an Isoloom spec:
 # Vulhub's struts2/s2-045, vendored in app/, run from the published image vulhub/struts2:2.3.30.
-# `isoloom generate`, then `isoloom up docker`.
+# `isoloom generate`, then `isoloom run docker`.
 version: 1
 name: vulhub-struts2-s2-045
 

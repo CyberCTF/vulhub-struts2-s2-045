@@ -4,11 +4,5 @@
   "question": "Exploit S2-045 (CVE-2017-5638) to run a command on the server.",
   "category": "WEB",
   "difficulty": 2,
-  "evidence_kind": "SECRET",
-  "capabilities": [
-    "ognl-injection",
-    "remote-code-execution",
-    "header-injection",
-    "struts2"
-  ]
+  "evidence_kind": "SECRET"
 }

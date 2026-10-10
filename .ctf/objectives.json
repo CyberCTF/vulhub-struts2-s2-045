@@ -1,0 +1,41 @@
+{
+  "objectives": [
+    {
+      "key": "main",
+      "title": "Read the flag",
+      "prompt": "Get code execution on the Struts 2 upload application and read /ctf/flag.",
+      "check": { "evidence": "SECRET", "format": "FLAG{%s}" },
+      "dev": "FLAG{dev-vulhub-struts2-s2-045}",
+      "hints": [
+        "The upload form is handled by the Jakarta multipart parser. What does it do with a Content-Type it can't parse?",
+        "Look up CVE-2017-5638 and how its error handling treats the header value."
+      ],
+      "steps": [
+        {
+          "key": "framework",
+          "title": "Identify the framework",
+          "prompt": "Which Java web framework handles the upload form? (name only)",
+          "check": { "answer": ["struts", "struts2", "struts 2", "apache struts", "apache struts 2", "apache struts2"] }
+        },
+        {
+          "key": "parser",
+          "title": "Find the parser",
+          "prompt": "Which multipart parser does this version use by default for uploads?",
+          "check": { "answer": ["jakarta", "jakarta multipart", "jakarta multipart parser"] }
+        },
+        {
+          "key": "header",
+          "title": "Find the injection point",
+          "prompt": "Which HTTP request header carries the value the server evaluates?",
+          "check": { "answer": ["content-type", "content type"] }
+        },
+        {
+          "key": "language",
+          "title": "Name the expression language",
+          "prompt": "In which expression language is that value evaluated? (acronym)",
+          "check": { "answer": ["ognl"] }
+        }
+      ]
+    }
+  ]
+}

@@ -1,8 +1,1 @@
-{
-  "title": "Struts2 S2-045 (CVE-2017-5638)",
-  "description": "An Apache Struts 2.3.30 file upload application, vulnerable to S2-045 (CVE-2017-5638): the Jakarta multipart parser evaluates an OGNL expression placed in the Content-Type header.",
-  "question": "Exploit S2-045 (CVE-2017-5638) to run a command on the server.",
-  "category": "WEB",
-  "difficulty": 2,
-  "evidence_kind": "SECRET"
-}
+{"title": "Struts2 S2-045 (CVE-2017-5638)", "description": "An Apache Struts 2.3.30 file upload application, vulnerable to S2-045 (CVE-2017-5638): the Jakarta multipart parser evaluates an OGNL expression placed in the Content-Type header.", "question": "Exploit S2-045 (CVE-2017-5638) to run a command on the server and read /ctf/flag.", "category": "WEB", "difficulty": 2, "evidence_kind": "SECRET"}
